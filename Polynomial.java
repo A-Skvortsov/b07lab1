@@ -34,7 +34,7 @@ public class Polynomial {
 	/* Constructor(double [] arr)
 	 * copies the polynomial represented by the given array into a Polynomial object
 	 */
-	public Polynomial(int [] ex, double [] co) {
+	public Polynomial(double [] co, int [] ex) {
 		int n = Math.min(co.length, ex.length);
 		coeffs = new double[n];
 		exps = new int[n];
@@ -354,7 +354,7 @@ public class Polynomial {
 			}
 		}
 
-		return new Polynomial(e0, c0);
+		return new Polynomial(c0, e0);
 	}
 	
 	

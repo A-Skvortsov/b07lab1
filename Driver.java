@@ -20,11 +20,11 @@ public class Driver {
 		//Lab 2 testing
 		double[] co_a = new double[] {-1, 0, 1, 100, 23};
 		int[] ex_a = new int[] {7, 500, 1, 3, 500};
-		Polynomial a = new Polynomial(ex_a, co_a);
+		Polynomial a = new Polynomial(co_a, ex_a);
 		
 		double[] co_b = new double[] {1, 99, 1, 0};
 		int[] ex_b = new int[] {0, 3, 1, 500};
-		Polynomial b = new Polynomial(ex_b, co_b);
+		Polynomial b = new Polynomial(co_b, ex_b);
 		
 			//test that a was created properly
 			System.out.println("a in driver:");
